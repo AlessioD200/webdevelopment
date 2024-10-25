@@ -2,13 +2,13 @@ h1,h2,h3,h4,h5,h6 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h1{
+p.p1{
     color: red;
 }
-h2{
+p.p2{
     color: green;
 }
-h3{
+p.p3{
     color: blue;
 }
 p{
