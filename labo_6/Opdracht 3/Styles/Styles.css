@@ -1,0 +1,42 @@
+header, footer{
+    background-color: #2B2D42;
+    font-family: Helvetica sans-serif;
+    padding: 30px;
+    color: #8D99AE;
+    margin: 10px 0;
+}
+header{
+    margin-bottom: 10px;
+}
+footer{
+    margin-top: 10px;
+}
+header h1,h2{
+    color: #EDF2F4;
+}
+header h1{
+    color: white;
+    font-size: 80px;
+}
+
+header h2{
+    color: white;
+    font-size: 40px;
+}
+
+footer{
+    padding: 30px;
+}
+
+section.education{
+    padding: 30px;
+    background-color: #8D99AE;
+}
+
+section.education h2{
+    color: black;
+}
+
+a:link {
+    color: #EF233C;
+}
