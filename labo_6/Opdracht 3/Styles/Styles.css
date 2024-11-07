@@ -11,6 +11,10 @@ header{
 footer{
     margin-top: 10px;
 }
+
+footer h2{
+    color: #8D99AE;
+}
 header h1,h2{
     color: #EDF2F4;
 }
