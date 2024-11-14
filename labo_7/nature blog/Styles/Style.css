@@ -1,19 +1,29 @@
-section > header{
+section > header {
+    background-size: cover;
     background-image: url("../Images/header.jpg");
-    margin: 10px;
-    padding: 15px;
-    width: 95%;
+    background-repeat: no-repeat;
+    padding: 20px;
 }
 
-header h1{
-    padding: 10px;
+
+
+header h1 {
     color: white;
-    margin: auto;
-    width: 100%;
+
+    text-align: left;
+    margin: 0;
+    padding: 10px;
+    position: relative;
+    top: -30px;
+    left: -20px;
+    font: bold 14px/1.5 "Roboto", sans-serif;
+    font-size: 2em;
+
 }
+
 nav{
     background-color: #2B2D42;
-    width: 100%;
+
 
 }
 
@@ -22,12 +32,14 @@ nav a{
     margin: 10px;
 }
 
-article{
+article {
     background-color: #EDF2F4;
-    margin: 5px;
+    margin: 10px 0;
+    padding: 10px;
 }
 article h1{
     color: black;
     font-size: 1.8em;
     text-decoration-line: underline;
+
 }
