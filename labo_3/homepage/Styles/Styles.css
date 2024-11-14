@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    background-color: #2B2D42;
+    padding: 10px;
+    margin: 0;
+    color: white;
+    border-radius: 5px;
+}
+
+
+ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.name::before {
+    content: "person";
+    font-family: "Material Icons", sans-serif;
+    font-size: 24px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.address::before {
+    content: "place";
+    font-family: "Material Icons", sans-serif;
+    font-size: 24px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.phone::before {
+    content: "phone";
+    font-family: "Material Icons", sans-serif;
+    font-size: 24px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.email::before {
+    content: "email";
+    font-family: "Material Icons", sans-serif;
+    font-size: 24px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+.info{
+    background-color: #8D99AE;
+    margin: 0;
+    padding: 10px;
+}
+.hobby {
+   background-color: #2B2D42;
+    margin: 0;
+    padding: 10px;
+    color: lightsteelblue;
+}
+.hobby h2{
+    color: lightsteelblue;
+    text-decoration-line: underline;
+}
+
+.likes{
+    background-color: #8D99AE;
+    margin: 0;
+    padding: 10px;
+    font-size: 1.1em;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+}
+
+img{
+    border-radius: 10px;
+
+}
+
+.ba{
+    background-color: #8D99AE;
+    padding: 10px;
+}
+
+.btn{
+    border-radius: 5px;
+    background-color:cornflowerblue;
+    color: black;
+    text-decoration-line: none;
+    padding: 10px;
+}
+
+.tabelv {
+    background-color: #2B2D42;
+    margin: 0;
+    padding: 10px;
+    color: lightsteelblue;
+}
+.tabelv h2{
+    color: lightsteelblue;
+    text-decoration-line: underline;
+    padding: 10px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+th {
+    background-color: cadetblue;
+}
+.alt {
+    background-color: darkmagenta;
+}
+
+.onbekend {background-color:red;}

@@ -3,48 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
+    <link href="Styles/Styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-<h1><u>Depreytere Alessio</u></h1>
+<section class="info">
+<h1>Home - Depreytere Alessio</h1>
 <h2>Info</h2>
 <ol>
-    <li>
+    <li class="name">
         <strong>Name</strong>: Depreytere Alessio
     </li>
-    <li>
+    <li class="address">
         <strong>Address</strong>: Maelstene 12, 8581 Kerkhove
     </li>
-    <li>
+    <li class="phone">
         <strong>Phone number</strong>: +32 478 22 86 26
     </li>
-    <li>
+    <li class="email">
         <strong>Email address</strong>: alessio.depreytere@hotmail.com
     </li>
-<li>
-    <img src="../Images/picture.jpg" alt="Picture of me" width="200" height="200">
-</li>
+    <li>
+        <img src="../Images/picture.jpg" alt="Picture of me" width="200" height="200">
+    </li>
 </ol>
-<section>
-<h2>Hobbies</h2>
+</section>
+<section class="hobby">
+    <h2>Hobbies</h2>
     <p>I don't have any hobbies</p>
 </section>
 
-<section>
-<h2>Likes</h2>
-<p>I like comedy, action and fantasy movies such as
-    <a href="https://www.primevideo.com/-/nl/detail/0NYKRAOS5LM42THT8B1U8ZNAWR/ref=atv_sr_fle_c_Tn74RA_1_1_1?sr=1-1&pageTypeIdSource=ASIN&pageTypeId=B086J1NHXL&qid=1728502384503">
-        Fast & Furious</a></p>
+<section class="likes">
+    <h2>Likes</h2>
+    <p>I like comedy, action and fantasy movies such as
+        <a href="https://www.primevideo.com/-/nl/detail/0NYKRAOS5LM42THT8B1U8ZNAWR/ref=atv_sr_fle_c_Tn74RA_1_1_1?sr=1-1&pageTypeIdSource=ASIN&pageTypeId=B086J1NHXL&qid=1728502384503">
+            Fast & Furious</a></p>
     <img src="../Images/Fast.jpg" alt="Picture of movie" height="300" width="480">
     <p>Second movie:
-    <a href=" https://www.primevideo.com/-/nl/detail/0K2K4N25VGA0GOABHNZ2AXJPF7/ref=atv_sr_fle_c_Tn74RA_1_1_1?sr=1-1&pageTypeIdSource=ASIN&pageTypeId=B0B5P1XBS4&qid=1728502468230">
-        Spider-Man</a></p>
+        <a href="https://www.primevideo.com/-/nl/detail/0K2K4N25VGA0GOABHNZ2AXJPF7/ref=atv_sr_fle_c_Tn74RA_1_1_1?sr=1-1&pageTypeIdSource=ASIN&pageTypeId=B0B5P1XBS4&qid=1728502468230">
+            Spider-Man</a></p>
     <img src="../Images/Spider.jpg" alt="Picture of movie" height="300" width="480">
     <p>Third movie:
-    <a href="https://www.primevideo.com/-/nl/detail/Top-Gun-Maverick/0TOE6KDBQ99V6816CO80IL4E90">
-        Top Gun Maverick</a></p>
+        <a href="https://www.primevideo.com/-/nl/detail/Top-Gun-Maverick/0TOE6KDBQ99V6816CO80IL4E90">
+            Top Gun Maverick</a></p>
     <img src="../Images/TOP.jpg" alt="Picture of movie" height="300" width="480">
 </section>
 
-<br><a href="../../index.html">Ga terug naar de main page.</a>
+<section class="tabelv">
+    <h2>Vrienden</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Voornaam</th>
+            <th>Familienaam</th>
+            <th>Postcode</th>
+            <th>Stad</th>
+            <th>Telefoonnummer</th>
+            <th>Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Alexander</td>
+            <td>Bultynck</td>
+            <td>8580</td>
+            <td>Avelgem</td>
+            <td>+32 476 12 34 56</td>
+            <td>alexander.bultynck@student.vives.be</td>
+        </tr>
+        <tr class="alt">
+            <td>Thibaut</td>
+            <td>Lahousse</td>
+            <td>8531</td>
+            <td>Bavikove</td>
+            <td class="onbekend">+32 495 65 78 90</td>
+            <td>thibaut.lahousse@student.vives.be</td>
+        </tr>
+        <tr>
+            <td>Mattéo</td>
+            <td>Hulpia</td>
+            <td>8420</td>
+            <td>de Haan</td>
+            <td>+32 477 88 99 00</td>
+            <td>mattéo.hulpia@student.vives.be</td>
+        </tr>
+        <tr>
+            <td>Sara</td>
+            <td>Van Damme</td>
+            <td>8500</td>
+            <td class="onbekend">Kortrijk</td>
+            <td>+32 474 33 44 55</td>
+            <td>sara.vandamme@outlook.com</td>
+        </tr>
+        <tr>
+            <td>Lars</td>
+            <td>De Jong</td>
+            <td>9000</td>
+            <td>Gent</td>
+            <td>+32 486 77 88 99</td>
+            <td>lars.dejong@outlook.com</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <p>De klasse .onbekend is minder specifieker dan .alt doordat hij geen verwijzing heeft een specifiek element en .alt wel.</p>
+</section>
+<section class="ba">
+<br><a href="../../index.html" class="btn">Ga terug naar de main page.</a>
+</section>
 </body>
 </html>
