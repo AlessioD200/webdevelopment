@@ -1,0 +1,15 @@
+.spacing {
+    display: flex;
+    padding: 20px;
+}
+
+.kolom {
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-right: 1px solid black;
+}
+
+.kolom:last-child {
+    border-right: none;
+}
