@@ -11,9 +11,10 @@ header img {
     width: 35%;
 }
 
-header p, .weekend{
+header p, .weekend {
     text-align: center;
 }
+
 h1, h2 {
     color: #007e7e;
 }
@@ -25,7 +26,6 @@ h1 {
 h2 {
     font-size: 130%;
 }
-
 
 .weekend {
     width: 25%;
@@ -67,19 +67,34 @@ h2 {
 #guarantee {
     background-color: #a7cece;
     color: #444444;
-    padding: 20px;
-    margin: 20px;
+    padding: 20px 20px 20px 60px;
+    margin: 30px;
     border: 2px dotted white;
+    text-align: left;
+    width: 90%;
+    position: relative;
+}
+
+#guarantee img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: auto;
+}
+
+#guarantee a {
+    color: black;
+    text-decoration: underline;
 }
 
 article {
     margin-bottom: 20px;
 }
 
-.tekst{
+.tekst {
     width: 70%;
 }
-
 
 footer {
     text-align: center;
