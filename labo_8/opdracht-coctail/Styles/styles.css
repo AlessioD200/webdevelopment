@@ -1,6 +1,6 @@
 body {
-    max-width: 70%;
-    margin: 5px;
+    width: 95%;
+    margin: auto;
     font-family: Verdana, Helvetica, Arial, sans-serif;
     font-size: 1.2em;
 }
@@ -8,11 +8,15 @@ body {
 header img {
     display: block;
     margin: 0 auto;
-    width: 40%;
+    width: 35%;
+}
+
+header p, .weekend {
+    text-align: center;
 }
 
 h1, h2 {
-    color: rgb(0, 126, 126);
+    color: #007e7e;
 }
 
 h1 {
@@ -24,25 +28,19 @@ h2 {
 }
 
 .weekend {
-    border: 3px solid #007e7e;
-    background-color: #f9f9f9;
-    padding: 10px;
-    box-sizing: border-box;
-    margin-top: 10px;
-    position: absolute;
-    right: 10px;
-    top:250px;
-    width: 30%;
+    width: 25%;
+    float: right;
+    border-style: solid;
+    border-color: #a7cece;
+    padding: 25px;
 }
 
 .weekend h1 {
-    color: #e67300;
-    margin-bottom: 15px;
+    color: black;
 }
 
 .weekend h2 {
-    color: #007e7e;
-    margin-top: 15px;
+    color: red;
 }
 
 .weekend p {
@@ -55,8 +53,6 @@ h2 {
     margin-bottom: 15px;
     max-width: 100%;
 }
-
-
 
 .weekend a {
     text-decoration: underline;
@@ -71,28 +67,38 @@ h2 {
 #guarantee {
     background-color: #a7cece;
     color: #444444;
-    padding: 20px;
-    margin-top: 20px;
+    padding: 20px 20px 20px 60px;
+    margin: 30px;
     border: 2px dotted white;
+    text-align: left;
+    width: 90%;
+    position: relative;
+}
+
+#guarantee img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: auto;
+}
+
+#guarantee a {
+    color: black;
+    text-decoration: underline;
 }
 
 article {
     margin-bottom: 20px;
 }
 
-ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-ul li {
-    margin-bottom: 10px;
+.tekst {
+    width: 70%;
 }
 
 footer {
     text-align: center;
-
-    margin-top: 20px;
+    margin-top: 300px;
     padding: 10px;
-
+    width: 100%;
 }
