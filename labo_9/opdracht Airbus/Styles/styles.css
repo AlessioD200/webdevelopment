@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    width: 70%;
+    width: 75%;
 }
 
 header{
@@ -74,8 +74,8 @@ section .foto{
 
 .gallery{
     background-color: gray;
-    width: 52%;
-    margin-top: 350px;
+    width: 60%;
+    margin-top: 360px;
     padding: 20px;
 }
 .foto{
@@ -93,15 +93,19 @@ section .foto{
     float: left;
     width: 10%;
     padding: 20px 20px 0 20px;
+    position: relative;
+    top: 30px;
 }
 
 .tekst{
     text-align: left;
     margin: 25px;
     padding-right: 30px;
-    padding-top: 20px;
-    float: right;
+    float: left;
     color: black;
+    position: relative;
+    bottom: 100px;
+    left: 120px;
 }
 
 .tekst span{
