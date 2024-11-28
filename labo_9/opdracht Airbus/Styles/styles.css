@@ -1,125 +1,103 @@
-body{
-    margin: 0;
-    padding: 0;
-    width: 75%;
+body {
+    width: 95%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
 header{
-    text-align: center;
-    font-size: 2em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:  darkblue;
-    padding: 15px;
+    height: 200px;
     background-image: url("../images/bgsky3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 200px;
 }
-header p{
-    font-size: 1.2em;
-    padding: 20px;
+header  p{
+    color: darkblue;
+    text-align: center;
+    font-weight: bold;
 }
-h1.title{
-    padding: 2px;
-    margin: 0;
-    font-size: 1.5em;
-}
-
 header img{
-    float: right;
-    position: relative;
-    bottom: 160px;
-    right: 470px;
+    position: absolute;
+    top: 11%;
+    right: 33%;
 }
-
+.title{
+    font-size: 300%;
+}
+.title1{
+    font-size: 240%;
+}
 .vlucht{
     float: right;
     width: 25%;
-    text-align: center;
-    padding: 10px;
-    border: 1px solid #999999;
     background-color: #dddddd;
-    margin: 0;
-    position: relative;
-    left: 233px;
+    border: 1px solid #999999;
 }
+
 .vlucht p{
     color: #666666;
     font-size: 90%;
-    margin: 10px
+    margin: 10px;
 }
 .vlucht h3{
-    background-color: blue;
     color: white;
+    background-color: blue;
     text-align: center;
     font-size: 120%;
 }
-
-section:first-child .gallery{
-    background-color: lightgray;
+main{
+    width: 75%;
+    margin: 10px 10px 0 0;
 }
-
-section{
-    text-align: center;
-    float: left;
-    width: 50%;
-}
-
-section img{
-    display: inline-block;
-}
-section .foto{
-    background-color: lightgray;
-}
-
-.gallery{
-    background-color: gray;
-    width: 60%;
-    margin-top: 360px;
-    padding: 20px;
-}
-.foto{
-    border: 1px dotted black;
-    padding: 10px;
-    margin: 10px;
-    overflow: hidden;
-    display: inline-block;
+.introduction{
     background-color: white;
-    width: 180px;
-    height: 180px;
-}
-
-.logo{
-    float: left;
-    width: 10%;
-    padding: 20px 20px 0 20px;
-    position: relative;
-    top: 30px;
-}
-
-.tekst{
-    text-align: left;
-    margin: 25px;
-    padding-right: 30px;
-    float: left;
     color: black;
-    position: relative;
-    bottom: 100px;
-    left: 120px;
 }
-
-.tekst span{
+.introduction span{
     color: blue;
     font-weight: bold;
 }
+.introduction p{
+    position: relative;
+    top: 20px;
+    bottom: 20px;
+    right: 30px;
 
+}
+.logo{
+    float: left;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+}
+.foto{
+    margin: 10px;
+    padding: 0;
+    display: inline-block;
+
+}
+.foto img{
+    border: 1px dotted white;
+    padding: 10px;
+    background-color: white;
+}
+.gallery{
+    background-color: gray;
+    width: 64%;
+    margin: 30px 0 0 0;
+    padding: 20px;
+}
 .bottom {
     display: flex;
     background-color: #666666;
     color: white;
     padding: 20px;
     line-height: 2em;
+}
 
+.bottom a:hover{
+    color: red;
 }
 
 .bottom ul {
@@ -145,8 +123,7 @@ section .foto{
 .bottom ul li a:hover {
     color: red;
 }
-
-.footer {
+footer {
     text-align: center;
     color: black;
     padding: 10px;
