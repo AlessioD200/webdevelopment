@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+
+    text-align: center;
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:  darkblue;
+    padding: 15px;
+    background-image: url("../images/bgsky3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1.title{
+    padding: 2px;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+header img{
+    display: inline-block;
+    float: right;
+    position: relative;
+    bottom: 150px;
+    right: 490px;
+}
+
+.vlucht{
+    float: right;
+    width: 20%;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: lightgray;
+    margin: 0;
+}
+
+.vlucht h3{
+    background-color: dodgerblue;
+    color: white;
+}
+
+section{
+    text-align: center;
+    float: left;
+    width: 50%;
+}
+
+section img{
+    display: inline-block;
+}
+section .foto{
+    background-color: lightgray;
+}
+.foto{
+    border: 1px solid black;
+    width: 15%;
+    padding: 5px;
+    margin: 5px;
+    overflow: hidden;
+    display: inline-block;
+}

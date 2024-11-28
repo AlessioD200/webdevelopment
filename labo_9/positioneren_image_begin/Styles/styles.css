@@ -1,0 +1,21 @@
+article:nth-child(even) img{
+    float: right;
+}
+
+article:nth-child(odd) img{
+    float: left;
+}
+
+article {
+    border: 2px solid black;
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+    font-size: 1.25em;
+    background-color: lightgrey;
+}
+
+article img {
+    margin: 0 10px 0 10px;
+}
