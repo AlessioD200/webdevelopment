@@ -2,16 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>WebDevelopment</title>
-    <link href="Styles/Styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-Development</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="Styles/preview.css" rel="stylesheet">
 </head>
 <body>
 
-<h1>Web Development 1</h1>
-<H2>Maak hier een keuze!</H2>
 <nav>
-    <a href="preview.html" class="hier">Home</a> | <a href="labo_2/index.html">Labo 2</a> | <a href="labo_3/index.html">Labo 3</a> | <a href="labo_4/index.html">Labo 4</a> | <a href="labo_5/index.html">Labo 5</a> | <a href="labo_6/index.html">Labo 6</a> | <a href="labo_7/index.html">Labo 7</a> | <a href="labo_8/index.html">Labo 8</a> | <a href="labo_9/index.html">Labo 9</a>
+    <ul>
+        <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+    </ul>
 </nav>
 
+<header id="home">
+    <h1>Labo Opdrachten</h1>
+</header>
+
+<div class="container" id="projects">
+    <div class="project">
+        <img src="./Images/12.png" alt="Labo 2 Icon">
+        <h3>Labo 2</h3>
+        <a href="labo_2/index.html" target="_blank">Ga naar labo</a>
+    </div>
+
+    <div class="project">
+        <img src="./Images/12.png" alt="Labo 3 Icon">
+        <h3>Labo 3</h3>
+        <a href="labo_3/index.html" target="_blank">Ga naar labo</a>
+    </div>
+
+    <div class="project">
+        <img src="./Images/12.png" alt="Labo 4 Icon">
+        <h3>Labo 4</h3>
+        <a href="labo_4/index.html" target="_blank">Ga naar labo</a>
+    </div>
+
+    <div class="project">
+        <img src="./Images/12.png" alt="Labo 5 Icon">
+        <h3>Labo 5</h3>
+        <a href="labo_5/index.html" target="_blank">Ga naar labo</a>
+    </div>
+
+    <div class="project">
+        <img src="./Images/12.png" alt="Labo 6 Icon">
+        <h3>Labo 6</h3>
+        <a href="labo_6/index.html" target="_blank">Ga naar labo</a>
+    </div>
+
+    <div class="project">
+        <img src="./Images/12.png" alt="Labo 7 Icon">
+        <h3>Labo 7</h3>
+        <a href="labo_7/index.html" target="_blank">Ga naar labo</a>
+    </div>
+
+    <div class="project">
+        <img src="./Images/12.png" alt="Labo 8 Icon">
+        <h3>Labo 8</h3>
+        <a href="labo_8/index.html" target="_blank">Ga naar labo</a>
+    </div>
+
+    <div class="project">
+        <img src="./Images/12.png" alt="Labo 9 Icon">
+        <h3>Labo 9</h3>
+        <a href="labo_9/index.html" target="_blank">Ga naar labo</a>
+    </div>
+</div>
+
+<footer id="about">
+    <p>&copy; 2024 Depreytere Alessio</p>
+</footer>
+<script>
+    window.addEventListener('load', function() {
+        document.body.classList.add('loaded');
+    });
+</script>
 </body>
 </html>
