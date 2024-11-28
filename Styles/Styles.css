@@ -1,31 +1,54 @@
-
 h1 {
     background-color: skyblue;
     padding: 20px;
     border-radius: 10px;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
 }
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
-nav{
+nav {
     background-color: paleturquoise;
     margin: 0;
     padding: 15px;
     border-radius: 10px;
+    transition: background-color 0.3s ease;
 }
 
-nav a{
+nav:hover {
+    background-color: lightseagreen;
+}
+
+nav a {
     padding: 10px;
     text-decoration: none;
     color: blueviolet;
     border-radius: 10px;
-
+    transition: transform 0.3s ease, color 0.3s ease;
 }
-nav a:hover{
+
+nav a:hover {
     border: 1px solid black;
     border-radius: 10px;
+    transform: scale(1.1);
+    color: darkviolet;
 }
 
-.hier{
+.hier {
     color: red;
     text-decoration-line: underline;
+    text-decoration-color: red;
+    transition: text-decoration-color 0.3s ease;
+}
+
+.hier:hover {
+    text-decoration-color: blueviolet;
 }
