@@ -37,7 +37,6 @@ nav ul li a:hover {
     color: black;
 }
 
-/* Header */
 header {
     background-color: #1E90FF;
     color: white;
@@ -45,7 +44,6 @@ header {
     text-align: center;
 }
 
-/* Projects Container */
 .container {
     padding: 30px;
     display: flex;
@@ -54,12 +52,16 @@ header {
 }
 
 .project-item {
+    display: inline-block;
     padding: 20px;
+    margin: 10px;
     border: 1px solid #ccc;
     border-radius: 10px;
     background: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: relative;
+    width: 11%;
+    height: 11%;
 }
 
 .dropdown-btn {
