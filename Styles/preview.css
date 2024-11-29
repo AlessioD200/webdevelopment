@@ -1,4 +1,4 @@
-/* General Reset */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,7 +7,6 @@ body {
     color: #333;
 }
 
-/* Navigation Bar */
 nav {
     background-color: #1E90FF;
     text-align: center;
@@ -63,7 +62,6 @@ header {
     position: relative;
 }
 
-/* Dropdown Button */
 .dropdown-btn {
     display: block;
     background-color: #1E90FF;
@@ -81,7 +79,6 @@ header {
     background-color: #0c70cc;
 }
 
-/* Dropdown Menu */
 .dropdown-menu {
     display: none;
     list-style: none;
@@ -96,13 +93,10 @@ header {
     width: 200px;
     left: 0;
 }
-
-/* Show the dropdown menu */
 .dropdown-menu.show {
     display: block;
 }
 
-/* Dropdown Items */
 .dropdown-menu li {
     padding: 10px;
     text-align: center;
@@ -118,7 +112,6 @@ header {
     background-color: #f4f4f4;
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 20px;
