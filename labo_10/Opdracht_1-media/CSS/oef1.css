@@ -1,0 +1,57 @@
+body {
+	font: 1.2em/1.2 Helvetica, aria, sans-serif;
+	margin: 0 3%;
+}
+
+figure {
+	background: black;
+	border-radius: 5px;
+	color: red;
+	margin: 0 0 25px 0;
+	padding: 10px;
+	text-align: center;
+}
+
+img {
+	max-width: 100%;
+}
+
+figcaption {
+	font-size: 0.8em;
+}
+
+figure {
+	width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+	body {
+		background-color: lightblue;
+	}
+
+	figure {
+		width: 48%;
+		display: inline-block;
+		margin-right: 2%;
+	}
+
+	figure:nth-child(2n) {
+		margin-right: 0;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	body {
+		background-color: lightgreen;
+	}
+
+	figure {
+		width: 30%;
+		display: inline-block;
+		margin-right: 1.66%;
+	}
+
+	figure:nth-child(3n) {
+		margin-right: 0;
+	}
+}
