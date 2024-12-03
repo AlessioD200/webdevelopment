@@ -1,4 +1,4 @@
-
+/* Base Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -19,11 +19,14 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    margin: 0;
 }
 
 nav ul li a {
@@ -47,21 +50,29 @@ header {
 .container {
     padding: 30px;
     display: flex;
-    flex-direction: column;
-    gap: 30px;
+    flex-wrap: wrap; /* Allows boxes to wrap on smaller screens */
+    gap: 20px;
+    justify-content: center; /* Center-align the boxes */
 }
 
+/* Project Item Styling */
 .project-item {
-    display: inline-block;
+    flex: 1 1 calc(25% - 40px); /* Default 4 items per row */
+    max-width: calc(25% - 40px); /* Ensure max width */
     padding: 20px;
     margin: 10px;
     border: 1px solid #ccc;
     border-radius: 10px;
     background: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: relative;
-    width: 11%;
-    height: 11%;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative; /* Make this the reference for dropdown positioning */
+}
+
+.project-item img {
+    max-width: 100%; /* Ensure images scale */
+    height: auto;
 }
 
 .dropdown-btn {
@@ -76,6 +87,7 @@ header {
     margin-top: 10px;
     transition: background-color 0.3s ease;
 }
+
 .dropdown-btn-niet {
     display: block;
     background-color: gray;
@@ -93,6 +105,7 @@ header {
     background-color: #0c70cc;
 }
 
+/* Adjust dropdown menu position */
 .dropdown-menu {
     display: none;
     list-style: none;
@@ -105,8 +118,10 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 10;
     width: 200px;
-    left: 0;
+    left: 0; /* Align the dropdown under the button */
+    top: 100%; /* Position it directly below the button */
 }
+
 .dropdown-menu.show {
     display: block;
 }
@@ -126,10 +141,37 @@ header {
     background-color: #f4f4f4;
 }
 
+/* Footer Styling */
 footer {
     text-align: center;
     padding: 20px;
     background-color: #1E90FF;
     color: white;
     margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .project-item {
+        flex: 1 1 calc(33.33% - 40px); /* 3 items per row */
+        max-width: calc(33.33% - 40px);
+    }
+}
+
+@media (max-width: 768px) {
+    .project-item {
+        flex: 1 1 calc(50% - 40px); /* 2 items per row */
+        max-width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .project-item {
+        flex: 1 1 100%; /* 1 item per row */
+        max-width: 100%;
+    }
+
+    .dropdown-menu {
+        width: 100%; /* Make dropdown menu full-width on small screens */
+    }
 }
