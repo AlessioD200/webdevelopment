@@ -1,19 +1,23 @@
 #a {
+    position: relative;
+    top: 165px;
     border: solid black;
     border-width: 0 7.5px 15px 0px;
     min-height: 165px;
     background: rgb(255, 255, 255);
 }
 #b {
+    position: relative;
+    top: 165px;
     border: solid black;
     border-width: 15px 7.5px 7.5px 0;
-    min-height: 190px;
+    max-height: 190px;
     background: rgb(255, 255, 255);
 }
 #c {
     border: solid black;
     border-width: 0 0 7.5px 7.5px;
-    min-height: 355px;
+    min-height: 190px;
     background: rgb(220, 40, 26);
 }
 #d {
@@ -35,8 +39,17 @@
     background: rgb(255, 255, 255);
 }
 #g{
+    position: relative;
+    right: 7px;
     border: solid black;
+    width: 231px;
     border-width: 12.5px 0 0 7.5px;
     min-height: 75px;
     background-color: rgb(242, 224, 122);
+}
+
+.main{
+    position: relative;
+    height: 355px;
+
 }
