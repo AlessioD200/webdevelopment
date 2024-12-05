@@ -23,28 +23,28 @@
 #d {
     border: solid black;
     border-width: 7.5px 7.5px 0 0;
-    height: 200px;
+    height: 150px;
     background: rgb(0, 93, 159);
 }
 #e {
     border: solid black;
     border-width: 7.5px 7.5px 0 7.5px;
-    max-height: 200px;
+    max-height: 150px;
     background: rgb(255, 255, 255);
 }
 #f {
     border: solid black;
     border-width: 7.5px 0 12.5px 7.5px;
-    max-height: 75px;
+    height: 75px;
     background: rgb(255, 255, 255);
 }
 #g{
     position: relative;
-    bottom: 125px;
+    bottom: 75px;
     border: solid black;
     width: 224px;
     border-width: 12.5px 0 0 7.5px;
-    height: 125px;
+    height: 75px;
     background-color: rgb(242, 224, 122);
 }
 
