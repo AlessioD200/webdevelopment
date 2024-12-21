@@ -1,0 +1,60 @@
+html {
+    background-color: #333;
+    font-family: helvetica, sans-serif;
+    display: flex;
+}
+
+*{
+    padding: 10px;
+}
+body{
+    font-size: 1em;
+    font-family: helvetica Arial, sans-serif;
+    margin: 5px;
+    padding: 10px;
+}
+section{
+    margin: 5px;
+}
+
+section a{
+    border: 1px solid #333;
+}
+header {
+    background: #ddaa00;
+}
+
+header a {
+    color: #ddaa00;
+}
+
+footer{
+    background: #ddaa00;
+}
+footer a{
+    color: #ddaa00;
+}
+
+nav{
+    background-color: #ccc;
+    padding: 5px 2px;
+}
+img{
+    padding: 0;
+}
+nav a {
+    margin: 0 5px;
+    border: 1px solid #ccc;
+}
+
+h1{
+    margin: 0;
+}
+
+main{
+    background-color: grey;
+}
+
+@media (min-width: 760px) {
+    flex-direction: column;
+}
