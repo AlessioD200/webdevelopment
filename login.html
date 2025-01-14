@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+      margin: 0;
+    }
+    .login-container {
+      background: white;
+      padding: 60px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 300px;
+    }
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .error {
+      color: red;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+<div class="login-container">
+  <h2>Login</h2>
+  <input type="password" id="password" placeholder="Voer wachtwoord in" />
+  <button onclick="checkPassword()">Login</button>
+  <p id="error" class="error"></p>
+</div>
+
+<script>
+  const correctPassword = "alessio is leuk"; // Vervang dit door jouw gewenste wachtwoord
+
+  function checkPassword() {
+    const inputPassword = document.getElementById("password").value;
+    const errorElement = document.getElementById("error");
+
+    if (inputPassword === correctPassword) {
+      errorElement.style.color = "green";
+      errorElement.textContent = "Login succesvol!";
+      // Hier kun je code toevoegen om naar een andere pagina te navigeren of andere acties uit te voeren
+      setTimeout(() => {
+        window.location.href = "./Test examen/airbus.html"; // Verwijs naar een andere pagina
+      }, 1000);
+    } else {
+      errorElement.style.color = "red";
+      errorElement.textContent = "Wachtwoord is onjuist.";
+    }
+  }
+</script>
+</body>
+</html>
