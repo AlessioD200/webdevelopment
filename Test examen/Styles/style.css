@@ -1,0 +1,148 @@
+.body{
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.top{
+    background: url("../Images/bgsky3.jpg") no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+
+.top p{
+    color: darkblue;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+.top img{
+    float: right;
+    position: absolute;
+    top: 60px;
+    right: 250px;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 300%;
+}
+
+.title1{
+    font-weight: bold;
+    font-size: 240%;
+}
+
+.news{
+    float: right;
+    display: block;
+    width: 25%;
+    background-color: #dddddd;
+    border: 1px solid #999999;
+}
+.news h3{
+    color: white;
+    font-size: 120%;
+    text-align: center;
+    font-weight: bold;
+    background-color: blue;
+}
+
+.news p{
+    padding: 10px;
+    color: #666666;
+    font-size: 90%;
+    text-align: left;
+}
+
+.main{
+    width: 75%;
+    padding: 10px 10px 0 10px;
+}
+.main img{
+    padding: 20px 20px 0 20px;
+    float: left;
+}
+
+
+@media (min-width: 768px) {
+    .main img{
+        margin-bottom: 70px;
+    }
+}
+
+@media (min-width: 992px) {
+    .main img{
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main img{
+        margin-bottom: 40px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .main img{
+        margin-bottom: 10px;
+    }
+}
+.introduction p{
+    text-align: justify;
+    background-color: white;
+    color: black;
+    padding: 20px 30px 20px 0;
+    margin: 0;
+}
+
+.introduction span{
+    font-weight: bold;
+    color: blue;
+}
+
+.gallery{
+    width: auto;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 0.2fr);
+    gap: 20px;
+    background-color: #999999;
+}
+.gallery img{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px;
+    border: 1px dotted #999999;
+    background-color: white;;
+    height: 158px;
+    width: 158px;
+}
+
+.bottom{
+    background-color: #666666;
+    margin: 0 0 10px 10px;
+    color: white;
+    line-height: 2em;
+    display: flex;
+    padding-top: 0;
+
+
+}
+
+.block{
+    margin-left: 120px;
+}
+
+.bottom a:hover{
+    color: red;
+}
+
+.copyright{
+    color: black;
+    text-align: center;
+    background-color: white;
+}
