@@ -86,6 +86,18 @@ header {
     transition: background-color 0.3s ease;
 }
 
+.dropdown-btn a{
+    display: block;
+    text-decoration: none;
+    background-color: #1E90FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
 .dropdown-btn-niet {
     display: block;
     width: 200px;
