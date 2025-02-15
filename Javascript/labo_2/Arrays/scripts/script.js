@@ -4,5 +4,7 @@ const setup = () => {
     console.log(namen[0],namen[2],namen[4])
     namen.push('Alessandro')
     console.log(namen)
+    console.log("Familieleden:", namen.join(", "));
+
 }
 window.addEventListener("load", setup);
