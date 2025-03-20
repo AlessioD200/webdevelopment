@@ -4,7 +4,6 @@ const setup = () => {
 
     let nieuweAfbeelding = document.createElement("img");
     nieuweAfbeelding.src = "./img/test.png";
-
     document.body.appendChild(nieuweAfbeelding);
 }
 

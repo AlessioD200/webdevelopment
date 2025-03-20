@@ -8,5 +8,4 @@ const setup = () => {
         div.appendChild(p);
     });
 };
-
 window.addEventListener("load", setup);
