@@ -1,0 +1,54 @@
+body{
+	width: 35%;
+	height: 10px;
+	padding: 10px;
+	margin: 10px;
+}
+.colorDemo {
+	width:100px;
+	height:100px;
+	border:1px solid black;
+	position:relative;
+	left: 300px;
+	bottom: 170px;
+	padding: 0;
+}
+
+section{
+	border: 3px solid lightgrey;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 0;
+	height: 190px;
+}
+
+#bewaarKleur {
+	margin-top: 130px;
+	display: block;
+}
+#savedColors {
+	margin-top: 20px;
+}
+.swatch {
+	width: 100px;
+	height: 75px;
+	position: relative;
+	bottom: 200px;
+	display: inline-block;
+	margin: 5px;
+}
+.deleteBtn {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	background: red;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+
+#bewaarKleur {
+	position: relative;
+	left: 300px;
+	bottom: 270px;
+}
