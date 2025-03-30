@@ -1,0 +1,20 @@
+#playField{
+    height: 500px;
+    width: 500px;
+    // aanvullen met hoogte en breedte
+}
+
+.sprite {
+    position:absolute;
+}
+
+.unselectable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+
+#target {
+    position: absolute;
+}
