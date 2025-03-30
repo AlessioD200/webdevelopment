@@ -2,24 +2,21 @@ const setup = () => {
     window.addEventListener("resize", updateSize);
     updateSize();
 
-    let playField = document.getElementById("playField");
     let startGame = document.getElementById("startBtn");
-
     if (startGame) {
         startGame.addEventListener("click", startBtn);
-        document.getElementById("clicks").addEventListener("click", updateClicks);
     }
 };
 
-const imageSources = ["./images/1.png", "./images/2.png", "./images/3.png", "./images/4.png", "./images/0.png"];
+const imageSources = ["./images/1.png", "./images/2.png", "./images/3.png", "./images/4.png", "./images/0.png"]; // "0.png" is the bomb
+let clickCount = 0;
+let bombTimer = null;
 
 const updateSize = () => {
     let playField = document.getElementById("playField");
-    playField.style.width = window.innerWidth + "px";
-    playField.style.height = window.innerHeight + "px";
 };
 
-const moveSprite = () => {
+const spawnSprite = () => {
     let sprite = document.getElementById("spriteImg");
     if (!sprite) return;
 
@@ -38,25 +35,31 @@ const moveSprite = () => {
 
     sprite.src = newImage;
 
-    if (newImage === "./images/0.png") {
-        let bombTimer = setTimeout(() => {
-            if (sprite.src === newImage) {
-                moveSprite();
-            }
-        }, 3000);
+    if (bombTimer) {
+        clearTimeout(bombTimer);
+        bombTimer = null;
+    }
 
-        sprite.addEventListener("click", () => {
-            clearTimeout(bombTimer@);
-            window.alert("GAME OVER!");
-            clickCount = 0;
-            updateClicks();
-        });
+    if (newImage === "./images/0.png") {
+        bombTimer = setTimeout(() => {
+            // Ensure it's still the bomb before replacing it
+            if (sprite.src.endsWith("0.png")) {
+                spawnSprite();
+            }
+        }, 2500);
+
+        sprite.onclick = () => {
+            clearTimeout(bombTimer);
+            alert("GAME OVER!");
+            resetGame();
+        };
     } else {
-        updateClicks();
+        sprite.onclick = () => {
+            updateClicks();
+            spawnSprite();
+        };
     }
 };
-
-let clickCount = 0;
 
 const updateClicks = () => {
     clickCount++;
@@ -64,6 +67,16 @@ const updateClicks = () => {
     if (clickDisplay) {
         clickDisplay.textContent = `Aantal clicks: ${clickCount}`;
     }
+};
+
+const resetGame = () => {
+    clickCount = 0;
+    updateClicks();
+    document.getElementById("startBtn").style.display = "block";
+    document.getElementById("deleteBomb").style.display = "block";
+
+    let sprite = document.getElementById("spriteImg");
+    if (sprite) sprite.remove();
 };
 
 const startBtn = () => {
@@ -86,7 +99,7 @@ const startBtn = () => {
             sprite.style.position = "absolute";
 
             playField.appendChild(sprite);
-            sprite.addEventListener("click", moveSprite);
+            spawnSprite();
         }
     }
 };

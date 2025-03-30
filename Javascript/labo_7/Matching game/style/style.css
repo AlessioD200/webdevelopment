@@ -1,0 +1,58 @@
+h1 {
+    text-align: center;
+    padding: 50px;
+}
+
+
+#speelveld {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.kaart {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.achterkant, .voorkant {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.achterkant {
+    z-index: 1;
+}
+
+.voorkant {
+    transform: rotateY(180deg);
+    z-index: 2;
+}
+
+.kaart.open .voorkant {
+    transform: rotateY(0deg);
+}
+
+.kaart.open .achterkant {
+    transform: rotateY(180deg);
+}
+
+.verborgen {
+    display: none;
+}
+
+.verdwenen {
+    visibility: hidden;
+}
+
