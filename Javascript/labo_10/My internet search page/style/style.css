@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    padding: 20px;
+    width: 80%;
+}
+#search{
+    width: 100%;
+    padding: 15px;
+}
+
+.GO{
+    padding: 15px;
+    background-color: Green;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.history-card{
+    width: 320px;
+    height: 100px;
+    padding: 25px;
+    display: inline-block;
+    border-radius: 10px;
+    opacity: 1;
+    margin: 5px;
+}
+
+.link-button{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 6px;
+    width: 60px;
+    height: 30px;
+}
+
+.title{
+    font-size: 1rem;
+    color: white;
+}
+
+.search{
+    color: white;
+}
+
+#clearBtn{
+    color: white;
+    background-color: red;
+    border-radius: 6px;
+}
