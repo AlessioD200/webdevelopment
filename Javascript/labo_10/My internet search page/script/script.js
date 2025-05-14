@@ -106,4 +106,5 @@ const setup = () => {
     laadKaartenVanLocalStorage();
 };
 
+
 window.addEventListener("load", setup);
