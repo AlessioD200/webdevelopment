@@ -8,6 +8,7 @@ const updateStart = () => {
     wijzigClass.style.display = "none";
     changeDate();
     questions();
+    antwoorden();
 }
 
 const questions = () => {
@@ -18,6 +19,13 @@ const questions = () => {
 
 const vraag = () => {
     const vraag = document.getElementById("questions");
+    const card1 = document.getElementsByClassName("card-header");
+    for (let i = 0; i < vragen.length; i++) {
+        card1[0].textContent = `Vraag ${i + 1}`;
+    }
+    const vraagstelling = document.getElementsByClassName("card-body");
+    vraagstelling[0].innerHTML = vragen[0].question;
+
     for (let i = 0; i < vragen.length; i++) {
         const li = document.createElement("li");
         li.setAttribute("data-question", i);
@@ -25,8 +33,18 @@ const vraag = () => {
         li.textContent = `Vraag ${i + 1}`;
         vraag.appendChild(li);
         shuffle()
-        console.log(vragen[i]);
     }
+}
+
+const antwoorden = () => {
+    const antwoorden = document.getElementById("answers");
+    let i = 0;
+        const li = document.createElement("li");
+        li.className = 'list-group-item';
+        li.textContent = vragen[i].answers[0];
+        vragen[i].answers = [vragen[i].answers[0], vragen[i].correct]
+        antwoorden.appendChild(li);
+
 }
 
 const shuffle = () => {
@@ -37,15 +55,12 @@ const shuffle = () => {
     }
 }
 
-const h5 = () => {
-    const h5 = document.getElementsByClassName("card-header");
-    h5.innerText = `Vraag ${i + 1}`;
-}
-
 const changeDate = () => {
     const date = document.getElementById("started");
     date.innerText = new Date().toLocaleDateString();
 }
+
+
 const vragen = [
     {
         question: "Wie is de hoofdpersoon in Final Fantasy VII Remake?",
